@@ -1,0 +1,49 @@
+npx create-react-app todo
+
+nvm use 16
+
+npm install @redux/toolkit react-redux
+
+npm install -D prettier eslint-config-prettier eslint-plugin-react
+
+create .eslintrc.json
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "prettier"
+  ],
+  "plugins": ["react"],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "react/prop-types": "off"
+  }
+}
+
+
+create .pretterrc.json
+{}
+
+create .prettierignore (same as .gitignore)
+
+.vscode settings.json:
+{
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false
+}
+
+
+
