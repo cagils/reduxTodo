@@ -2,8 +2,6 @@ npx create-react-app todo
 
 nvm use 16
 
-npm install @redux/toolkit react-redux
-
 npm install -D prettier eslint-config-prettier eslint-plugin-react
 
 create .eslintrc.json
@@ -45,5 +43,16 @@ create .prettierignore (same as .gitignore)
   "javascript.validate.enable": false
 }
 
+create todo basic components with add, delete, toggle check buttons
+
+# REDUX toolkit
+npm install @redux/toolkit react-redux
+create the store, todoSlice and implement reducers for add, delete, toggle
+
+React > 16 uses errorboundary and without it just unmounts all tree. So we define an ErrorBoundary wrapper around the App
+ErrorBoundary.jsx
+
+Bettery yet we can use npm package: npm install --save react-error-boundary
+We can also handle async callback errors with error boundary using useErrorHandler hook from that library.
 
 

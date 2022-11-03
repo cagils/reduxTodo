@@ -14,11 +14,11 @@ const TodoList = () => {
 
   return (
     <div className="list">
-      {todos.map((todo, i) => (
-        <div className="item" key={i}>
+      {todos.map((todo) => (
+        <div className="item" data-id={todo.id} key={todo.id}>
           <span
             className="itemCheck"
-            onClick={() => dispatch(actionToggleTodo({ index: i }))}
+            onClick={() => dispatch(actionToggleTodo({ id: todo.id }))}
           >
             {todo.done ? "✓" : ""}
           </span>
@@ -28,7 +28,7 @@ const TodoList = () => {
           <span className="itemButton">
             <button
               id="deleteButton"
-              onClick={() => dispatch(actionDeleteTodo({ index: i }))}
+              onClick={() => dispatch(actionDeleteTodo({ id: todo.id }))}
             >
               Delete
             </button>
