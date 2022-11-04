@@ -1,0 +1,8 @@
+{
+  "todos": [
+    { "id": 1, "text": "todo 1", "done": false },
+    { "id": 2, "text": "todo 2", "done": false },
+    { "id": 3, "text": "todo 3", "done": false },
+    { "id": 4, "text": "todo 4", "done": false }
+  ]
+}
